@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "elemental_spellblades",
+  "version": "${version}",
+  "name": "Elemental Spellblades",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/elemental_spellblades/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.cooperzilla.elemental_spellblades.client.ElementalSpellbladesClient"
+    ],
+    "main": [
+      "me.cooperzilla.elemental_spellblades.ElementalSpellblades"
+    ]
+  },
+  "mixins": [
+    "elemental_spellblades.mixins.json",
+    {
+      "config": "elemental_spellblades.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
