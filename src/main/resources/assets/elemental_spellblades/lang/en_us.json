@@ -7,6 +7,9 @@
   "item.elemental_spellblades.earth_spike": "Earth Spike",
   "item.elemental_spellblades.water_cutlass": "Water Cutlass",
   "item.elemental_spellblades.wind_greatblade": "Wind Greatblade",
+  "item.elemental_spellblades.runequake_ingot": "Runequake Ingot",
+  "item.elemental_spellblades.runewave_ingot": "Runewave Ingot",
+  "item.elemental_spellblades.runestorm_ingot": "Runestorm Ingot",
 
   "attribute.name.elemental_spellblades.convert_to_earth": "Attack Damage gained as Earth Power",
   "attribute.name.elemental_spellblades.convert_to_water": "Attack Damage gained as Water Power",
