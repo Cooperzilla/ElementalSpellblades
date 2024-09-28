@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  D",
+    "BC ",
+    "AB "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:iron_sword"
+    },
+    "B": {
+      "tag": "more_rpg_classes:coral_plants"
+    },
+    "C": {
+      "item": "minecraft:glow_ink_sac"
+    },
+    "D": {
+      "item": "minecraft:prismarine_crystals"
+    }
+  },
+  "result": {
+    "id": "elemental_spellblades:water_spellblade"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:prismarine_crystals"
+  },
+  "base": {
+    "item": "minecraft:iron_block"
+  },
+  "addition": {
+    "item": "more_rpg_classes:aqua_stone"
+  },
+  "result": {
+    "id": "elemental_spellblades:runewave_ingot"
+  }
+}

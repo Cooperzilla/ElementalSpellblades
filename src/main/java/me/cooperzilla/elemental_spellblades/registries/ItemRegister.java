@@ -15,6 +15,10 @@ public class ItemRegister {
     static SwordItem water_cutlass = new WaterCutlass();
     static SwordItem wind_greatblade = new WindGreatblade();
 
+    static Item runewave_ingot = new Item(new Item.Settings());
+    static Item runequake_ingot = new Item(new Item.Settings());
+    static Item runestorm_ingot = new Item(new Item.Settings());
+
     static void registerItem(String s, Item i) {
         Registry.register(Registries.ITEM, Identifier.of("elemental_spellblades", s), i);
     }
@@ -26,5 +30,8 @@ public class ItemRegister {
         registerItem("earth_spike", earth_spike);
         registerItem("water_cutlass", water_cutlass);
         registerItem("wind_greatblade", wind_greatblade);
+        registerItem("runewave_ingot", runewave_ingot);
+        registerItem("runequake_ingot", runequake_ingot);
+        registerItem("runestorm_ingot", runestorm_ingot);
     }
 }

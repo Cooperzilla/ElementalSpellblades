@@ -19,6 +19,9 @@ public class CreativeTabRegister {
                 entries.add(ItemRegister.earth_spike);
                 entries.add(ItemRegister.water_cutlass);
                 entries.add(ItemRegister.wind_greatblade);
+                entries.add(ItemRegister.runequake_ingot);
+                entries.add(ItemRegister.runewave_ingot);
+                entries.add(ItemRegister.runestorm_ingot);
             })
             .build();
     public static void register() {

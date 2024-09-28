@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  D",
+    "BC ",
+    "AB "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:golden_sword"
+    },
+    "B": {
+      "item": "minecraft:gold_ingot"
+    },
+    "C": {
+      "item": "minecraft:breeze_rod"
+    },
+    "D": {
+      "item": "minecraft:wind_charge"
+    }
+  },
+  "result": {
+    "id": "elemental_spellblades:wind_spellblade"
+  }
+}

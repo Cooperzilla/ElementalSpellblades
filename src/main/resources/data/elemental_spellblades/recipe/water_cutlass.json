@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "more_rpg_classes:aqua_stone"
+  },
+  "base": {
+    "item": "elemental_spellblades:water_spellblade"
+  },
+  "addition": {
+    "item": "elemental_spellblades:runewave_ingot"
+  },
+  "result": {
+    "id": "elemental_spellblades:water_cutlass"
+  }
+}

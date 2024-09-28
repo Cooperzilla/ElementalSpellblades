@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:wind_charge"
+  },
+  "base": {
+    "item": "minecraft:gold_block"
+  },
+  "addition": {
+    "item": "more_rpg_classes:storm_stone"
+  },
+  "result": {
+    "id": "elemental_spellblades:runestorm_ingot"
+  }
+}
