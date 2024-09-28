@@ -4,6 +4,8 @@
   "package": "me.cooperzilla.elemental_spellblades.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "ItemstackMixin",
+    "LivingEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1

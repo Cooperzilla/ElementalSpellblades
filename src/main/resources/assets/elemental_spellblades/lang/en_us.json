@@ -1,0 +1,14 @@
+{
+  "itemGroup.elemental_spellblades.creative_tab": "Elemental Spellblades",
+
+  "item.elemental_spellblades.earth_spellblade": "Earth Spellblade",
+  "item.elemental_spellblades.water_spellblade": "Water Spellblade",
+  "item.elemental_spellblades.wind_spellblade": "Wind Spellblade",
+  "item.elemental_spellblades.earth_spike": "Earth Spike",
+  "item.elemental_spellblades.water_cutlass": "Water Cutlass",
+  "item.elemental_spellblades.wind_greatblade": "Wind Greatblade",
+
+  "attribute.name.elemental_spellblades.convert_to_earth": "Attack Damage gained as Earth Power",
+  "attribute.name.elemental_spellblades.convert_to_water": "Attack Damage gained as Water Power",
+  "attribute.name.elemental_spellblades.convert_to_wind": "Attack Damage gained as Air Power"
+}

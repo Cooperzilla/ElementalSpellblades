@@ -1,0 +1,44 @@
+package me.cooperzilla.elemental_spellblades.mixin;
+
+import com.cleannrooster.spellblades.SpellbladesAndSuch;
+import com.cleannrooster.spellblades.items.interfaces.PlayerDamageInterface;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.Identifier;
+import net.more_rpg_classes.custom.MoreSpellSchools;
+import net.spell_engine.internals.SpellContainerHelper;
+import net.spell_power.api.SpellPower;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+
+@Mixin({ItemStack.class})
+public class ItemstackMixin {
+
+    @Inject(
+            at = {@At("HEAD")},
+            method = {"postDamageEntity"},
+            cancellable = true
+    )
+    public void postDamageEntityElementalSpellblades(LivingEntity target, PlayerEntity player, CallbackInfo callbackInfo) {
+        if (player.hasStatusEffect(SpellbladesAndSuch.SPELLSTRIKE) && player instanceof PlayerDamageInterface playerDamageInterface) {
+            if (playerDamageInterface.getSpellstriking() && !player.getWorld().isClient() && SpellContainerHelper.getEquipped(player.getMainHandStack(), player).spell_ids() != null && SpellContainerHelper.getEquipped(player.getMainHandStack(), player).spell_ids().contains("spellbladenext:spellstrike")) {
+                if (playerDamageInterface.getSpellstrikeSpells().isEmpty()) {
+                    if (SpellPower.getSpellPower(MoreSpellSchools.EARTH, player).baseValue() >= 1.0) {
+                        playerDamageInterface.queueSpellStrikeSpell(Identifier.of("elemental_spellblades", "blastearth"));
+                    }
+
+                    if (SpellPower.getSpellPower(MoreSpellSchools.WATER, player).baseValue() >= 1.0) {
+                        playerDamageInterface.queueSpellStrikeSpell(Identifier.of("elemental_spellblades", "blastwater"));
+                    }
+
+                    if (SpellPower.getSpellPower(MoreSpellSchools.AIR, player).baseValue() >= 1.0) {
+                        playerDamageInterface.queueSpellStrikeSpell(Identifier.of("elemental_spellblades", "blastair"));
+                    }
+                }
+            }
+        }
+    }
+}
