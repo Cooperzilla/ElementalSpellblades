@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " DD",
+    "CAD",
+    "BC "
+  ],
+  "key": {
+    "A": {
+      "item": "elemental_spellblades:water_spellblade"
+    },
+    "B": {
+      "item": "minecraft:iron_block"
+    },
+    "C": {
+      "tag": "more_rpg_classes:coral_plants"
+    },
+    "D": {
+      "item": "minecraft:prismarine_crystals"
+    }
+  },
+  "result": {
+    "id": "elemental_spellblades:earth_spellblade"
+  }
+}

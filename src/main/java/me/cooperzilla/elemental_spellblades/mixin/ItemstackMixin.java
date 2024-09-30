@@ -9,6 +9,7 @@ import net.minecraft.util.Identifier;
 import net.more_rpg_classes.custom.MoreSpellSchools;
 import net.spell_engine.internals.SpellContainerHelper;
 import net.spell_power.api.SpellPower;
+import net.spell_power.api.SpellSchools;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -35,7 +36,17 @@ public class ItemstackMixin {
                     }
 
                     if (SpellPower.getSpellPower(MoreSpellSchools.AIR, player).baseValue() >= 1.0) {
-                        playerDamageInterface.queueSpellStrikeSpell(Identifier.of("elemental_spellblades", "blastair"));
+                        playerDamageInterface.queueSpellStrikeSpell(Identifier.of("spellbladenext", "blastair"));
+                    }
+
+                    if (SpellPower.getSpellPower(SpellSchools.ARCANE, player).baseValue() >= 1.0) {
+                        playerDamageInterface.queueSpellStrikeSpell(Identifier.of("spellbladenext", "blastarcane"));
+                    }
+                    if (SpellPower.getSpellPower(SpellSchools.FIRE, player).baseValue() >= 1.0) {
+                        playerDamageInterface.queueSpellStrikeSpell(Identifier.of("spellbladenext", "blastfire"));
+                    }
+                    if (SpellPower.getSpellPower(SpellSchools.FROST, player).baseValue() >= 1.0) {
+                        playerDamageInterface.queueSpellStrikeSpell(Identifier.of("spellbladenext", "blastfrost"));
                     }
                 }
             }

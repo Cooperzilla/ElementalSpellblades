@@ -22,6 +22,9 @@ public class CreativeTabRegister {
                 entries.add(ItemRegister.runequake_ingot);
                 entries.add(ItemRegister.runewave_ingot);
                 entries.add(ItemRegister.runestorm_ingot);
+                entries.add(ItemRegister.earth_claymore);
+                entries.add(ItemRegister.water_claymore);
+                entries.add(ItemRegister.wind_claymore);
             })
             .build();
     public static void register() {

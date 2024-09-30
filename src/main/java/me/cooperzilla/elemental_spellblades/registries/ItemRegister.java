@@ -14,6 +14,9 @@ public class ItemRegister {
     static SwordItem earth_spike = new EarthSpike();
     static SwordItem water_cutlass = new WaterCutlass();
     static SwordItem wind_greatblade = new WindGreatblade();
+    static SwordItem earth_claymore = new EarthClaymore();
+    static SwordItem water_claymore = new WaterClaymore();
+    static SwordItem wind_claymore = new WindClaymore();
 
     static Item runewave_ingot = new Item(new Item.Settings());
     static Item runequake_ingot = new Item(new Item.Settings());
@@ -33,5 +36,8 @@ public class ItemRegister {
         registerItem("runewave_ingot", runewave_ingot);
         registerItem("runequake_ingot", runequake_ingot);
         registerItem("runestorm_ingot", runestorm_ingot);
+        registerItem("earth_claymore", earth_claymore);
+        registerItem("water_claymore", water_claymore);
+        registerItem("wind_claymore", wind_claymore);
     }
 }
