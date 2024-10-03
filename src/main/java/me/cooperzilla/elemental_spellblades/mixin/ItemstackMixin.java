@@ -48,6 +48,9 @@ public class ItemstackMixin {
                     if (SpellPower.getSpellPower(SpellSchools.FROST, player).baseValue() >= 1.0) {
                         playerDamageInterface.queueSpellStrikeSpell(Identifier.of("spellbladenext", "blastfrost"));
                     }
+                    if (SpellPower.getSpellPower(SpellSchools.LIGHTNING, player).baseValue() >= 1.0) {
+                        playerDamageInterface.queueSpellStrikeSpell(Identifier.of("spellbladenext", "blastlightning"));
+                    }
                 }
             }
         }
