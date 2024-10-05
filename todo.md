@@ -1,7 +1,5 @@
 # current
 
-- get claymores rendering
-- change earth spellblade textures
 - add orbs
 - add armor
 - add technique spellbooks
