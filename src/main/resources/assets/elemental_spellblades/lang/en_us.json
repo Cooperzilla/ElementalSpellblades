@@ -13,6 +13,9 @@
   "item.elemental_spellblades.earth_claymore": "Earth Claymore",
   "item.elemental_spellblades.water_claymore": "Water Claymore",
   "item.elemental_spellblades.wind_claymore": "Wind Claymore",
+  "item.elemental_spellblades.earth_orb": "Earth Orb",
+  "item.elemental_spellblades.water_orb": "Water Orb",
+  "item.elemental_spellblades.wind_orb": "Wind Orb",
 
   "attribute.name.elemental_spellblades.convert_to_earth": "Attack Damage gained as Earth Power",
   "attribute.name.elemental_spellblades.convert_to_water": "Attack Damage gained as Water Power",

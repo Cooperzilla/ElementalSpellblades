@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "elemental_spellblades:earth_orb",
+    "elemental_spellblades:water_orb",
+    "elemental_spellblades:wind_orb"
+  ]
+}

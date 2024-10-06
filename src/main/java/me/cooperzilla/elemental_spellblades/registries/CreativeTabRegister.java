@@ -25,6 +25,9 @@ public class CreativeTabRegister {
                 entries.add(ItemRegister.earth_claymore);
                 entries.add(ItemRegister.water_claymore);
                 entries.add(ItemRegister.wind_claymore);
+                entries.add(ItemRegister.earth_orb);
+                entries.add(ItemRegister.water_orb);
+                entries.add(ItemRegister.wind_orb);
             })
             .build();
     public static void register() {
