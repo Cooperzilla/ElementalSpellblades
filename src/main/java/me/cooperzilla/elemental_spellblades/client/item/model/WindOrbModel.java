@@ -14,7 +14,7 @@ public class WindOrbModel extends GeoModel<WindOrb> {
     }
 
     public Identifier getTextureResource(WindOrb orb) {
-        return Identifier.of("elemental_Spellblades", "textures/item/orb_wind.png");
+        return Identifier.of("elemental_spellblades", "textures/item/orb_wind.png");
     }
 
     public Identifier getAnimationResource(WindOrb orb) {

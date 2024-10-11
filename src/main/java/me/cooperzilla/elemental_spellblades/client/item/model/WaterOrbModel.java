@@ -14,7 +14,7 @@ public class WaterOrbModel extends GeoModel<WaterOrb> {
     }
 
     public Identifier getTextureResource(WaterOrb orb) {
-        return Identifier.of("elemental_Spellblades", "textures/item/orb_water.png");
+        return Identifier.of("elemental_spellblades", "textures/item/orb_water.png");
     }
 
     public Identifier getAnimationResource(WaterOrb orb) {

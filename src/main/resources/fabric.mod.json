@@ -10,19 +10,12 @@
   "icon": "assets/elemental_spellblades/icon.png",
   "environment": "*",
   "entrypoints": {
-    "client": [
-      "me.cooperzilla.elemental_spellblades.client.ElementalSpellbladesClient"
-    ],
     "main": [
       "me.cooperzilla.elemental_spellblades.ElementalSpellblades"
     ]
   },
   "mixins": [
-    "elemental_spellblades.mixins.json",
-    {
-      "config": "elemental_spellblades.client.mixins.json",
-      "environment": "client"
-    }
+    "elemental_spellblades.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",

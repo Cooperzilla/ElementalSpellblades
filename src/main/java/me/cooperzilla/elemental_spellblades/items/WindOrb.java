@@ -79,7 +79,7 @@ public class WindOrb extends SwordItem implements GeoItem {
             private WindOrbRenderer renderer;
 
             @Override
-            public BlockEntityWithoutLevelRenderer getCustomRenderer() {
+            public BuiltinModelItemRenderer getCustomRenderer() {
                 if (this.renderer == null) {
                     this.renderer = new WindOrbRenderer();
                 }

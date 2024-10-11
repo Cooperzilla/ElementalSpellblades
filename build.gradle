@@ -9,16 +9,6 @@ base {
     archivesName = project.archives_base_name
 }
 
-loom {
-    splitEnvironmentSourceSets()
-
-    mods {
-        "elemental_spellblades" {
-            sourceSet sourceSets.main
-        }
-    }
-}
-
 repositories {
     maven {
         name = 'Modrinth'

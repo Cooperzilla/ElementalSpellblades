@@ -14,7 +14,7 @@ public class EarthOrbModel extends GeoModel<EarthOrb> {
     }
 
     public Identifier getTextureResource(EarthOrb orb) {
-        return Identifier.of("elemental_Spellblades", "textures/item/orb_earth.png");
+        return Identifier.of("elemental_spellblades", "textures/item/orb_earth.png");
     }
 
     public Identifier getAnimationResource(EarthOrb orb) {
