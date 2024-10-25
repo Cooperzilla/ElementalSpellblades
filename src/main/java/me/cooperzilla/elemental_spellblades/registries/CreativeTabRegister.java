@@ -8,29 +8,45 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
+import static me.cooperzilla.elemental_spellblades.ElementalSpellblades.MOD_ID;
+import static me.cooperzilla.elemental_spellblades.armor.Armor.*;
+import static me.cooperzilla.elemental_spellblades.registries.ItemRegister.*;
+
 public class CreativeTabRegister {
     private static final ItemGroup ITEM_GROUP = FabricItemGroup.builder()
             .icon(() -> new ItemStack(ItemRegister.earth_spellblade))
             .displayName(Text.translatable("itemGroup.elemental_spellblades.creative_tab"))
             .entries((context, entries) -> {
-                entries.add(ItemRegister.earth_spellblade);
-                entries.add(ItemRegister.water_spellblade);
-                entries.add(ItemRegister.wind_spellblade);
-                entries.add(ItemRegister.earth_spike);
-                entries.add(ItemRegister.water_cutlass);
-                entries.add(ItemRegister.wind_greatblade);
-                entries.add(ItemRegister.runequake_ingot);
-                entries.add(ItemRegister.runewave_ingot);
-                entries.add(ItemRegister.runestorm_ingot);
-                entries.add(ItemRegister.earth_claymore);
-                entries.add(ItemRegister.water_claymore);
-                entries.add(ItemRegister.wind_claymore);
-                entries.add(ItemRegister.earth_orb);
-                entries.add(ItemRegister.water_orb);
-                entries.add(ItemRegister.wind_orb);
+                entries.add(earth_spellblade);
+                entries.add(water_spellblade);
+                entries.add(wind_spellblade);
+                entries.add(earth_spike);
+                entries.add(water_cutlass);
+                entries.add(wind_greatblade);
+                entries.add(runequake_ingot);
+                entries.add(runewave_ingot);
+                entries.add(runestorm_ingot);
+                entries.add(earth_claymore);
+                entries.add(water_claymore);
+                entries.add(wind_claymore);
+                entries.add(earth_orb);
+                entries.add(water_orb);
+                entries.add(wind_orb);
+                entries.add(earth_helmet);
+                entries.add(earth_chestplate);
+                entries.add(earth_leggings);
+                entries.add(earth_boots);
+                entries.add(wind_helmet);
+                entries.add(wind_chestplate);
+                entries.add(wind_leggings);
+                entries.add(wind_boots);
+                entries.add(water_helmet);
+                entries.add(water_chestplate);
+                entries.add(water_leggings);
+                entries.add(water_boots);
             })
             .build();
     public static void register() {
-        Registry.register(Registries.ITEM_GROUP, Identifier.of("elemental_spellblades", "creative_tab"), ITEM_GROUP);
+        Registry.register(Registries.ITEM_GROUP, Identifier.of(MOD_ID, "creative_tab"), ITEM_GROUP);
     }
 }

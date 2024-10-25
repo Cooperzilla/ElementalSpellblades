@@ -5,6 +5,8 @@ import me.cooperzilla.elemental_spellblades.items.EarthOrb;
 import mod.azure.azurelib.common.api.client.model.GeoModel;
 import net.minecraft.util.Identifier;
 
+import static me.cooperzilla.elemental_spellblades.ElementalSpellblades.MOD_ID;
+
 public class EarthOrbModel extends GeoModel<EarthOrb> {
     public EarthOrbModel() {
     }
@@ -14,7 +16,7 @@ public class EarthOrbModel extends GeoModel<EarthOrb> {
     }
 
     public Identifier getTextureResource(EarthOrb orb) {
-        return Identifier.of("elemental_spellblades", "textures/item/orb_earth.png");
+        return Identifier.of(MOD_ID, "textures/item/orb_earth.png");
     }
 
     public Identifier getAnimationResource(EarthOrb orb) {

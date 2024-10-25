@@ -5,6 +5,8 @@ import me.cooperzilla.elemental_spellblades.items.WindOrb;
 import mod.azure.azurelib.common.api.client.model.GeoModel;
 import net.minecraft.util.Identifier;
 
+import static me.cooperzilla.elemental_spellblades.ElementalSpellblades.MOD_ID;
+
 public class WindOrbModel extends GeoModel<WindOrb> {
     public WindOrbModel() {
     }
@@ -14,7 +16,7 @@ public class WindOrbModel extends GeoModel<WindOrb> {
     }
 
     public Identifier getTextureResource(WindOrb orb) {
-        return Identifier.of("elemental_spellblades", "textures/item/orb_wind.png");
+        return Identifier.of(MOD_ID, "textures/item/orb_wind.png");
     }
 
     public Identifier getAnimationResource(WindOrb orb) {

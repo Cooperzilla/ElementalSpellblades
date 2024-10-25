@@ -15,6 +15,8 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+import static me.cooperzilla.elemental_spellblades.ElementalSpellblades.MOD_ID;
+
 @Mixin({ItemStack.class})
 public class ItemstackMixin {
 
@@ -28,15 +30,15 @@ public class ItemstackMixin {
             if (playerDamageInterface.getSpellstriking() && !player.getWorld().isClient() && SpellContainerHelper.getEquipped(player.getMainHandStack(), player).spell_ids() != null && SpellContainerHelper.getEquipped(player.getMainHandStack(), player).spell_ids().contains("spellbladenext:spellstrike")) {
                 if (playerDamageInterface.getSpellstrikeSpells().isEmpty()) {
                     if (SpellPower.getSpellPower(MoreSpellSchools.EARTH, player).baseValue() >= 1.0) {
-                        playerDamageInterface.queueSpellStrikeSpell(Identifier.of("elemental_spellblades", "blastearth"));
+                        playerDamageInterface.queueSpellStrikeSpell(Identifier.of(MOD_ID, "blastearth"));
                     }
 
                     if (SpellPower.getSpellPower(MoreSpellSchools.WATER, player).baseValue() >= 1.0) {
-                        playerDamageInterface.queueSpellStrikeSpell(Identifier.of("elemental_spellblades", "blastwater"));
+                        playerDamageInterface.queueSpellStrikeSpell(Identifier.of(MOD_ID, "blastwater"));
                     }
 
                     if (SpellPower.getSpellPower(MoreSpellSchools.AIR, player).baseValue() >= 1.0) {
-                        playerDamageInterface.queueSpellStrikeSpell(Identifier.of("spellbladenext", "blastair"));
+                        playerDamageInterface.queueSpellStrikeSpell(Identifier.of(MOD_ID, "blastair"));
                     }
 
                     if (SpellPower.getSpellPower(SpellSchools.ARCANE, player).baseValue() >= 1.0) {

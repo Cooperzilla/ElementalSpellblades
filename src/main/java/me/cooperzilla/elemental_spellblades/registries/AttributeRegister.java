@@ -10,11 +10,13 @@ import net.minecraft.util.Identifier;
 import net.more_rpg_classes.custom.MoreSpellSchools;
 import net.spell_power.api.SpellSchool;
 
+import static me.cooperzilla.elemental_spellblades.ElementalSpellblades.MOD_ID;
+
 public class AttributeRegister {
 
     public static final RegistryEntry<EntityAttribute> convert_to_earth = Registry.registerReference(
             Registries.ATTRIBUTE,
-            Identifier.of("elemental_spellblades", "converttoearth"),
+            Identifier.of(MOD_ID, "converttoearth"),
             new ClampedEntityAttribute(
                     "attribute.name.elemental_spellblades.convert_to_earth",
                     100, 100, 9999
@@ -22,7 +24,7 @@ public class AttributeRegister {
     );
     public static final RegistryEntry<EntityAttribute> convert_to_water = Registry.registerReference(
             Registries.ATTRIBUTE,
-            Identifier.of("elemental_spellblades", "converttowater"),
+            Identifier.of(MOD_ID, "converttowater"),
             new ClampedEntityAttribute(
                     "attribute.name.elemental_spellblades.convert_to_water",
                     100, 100, 9999
@@ -30,7 +32,7 @@ public class AttributeRegister {
     );
     public static final RegistryEntry<EntityAttribute> convert_to_wind = Registry.registerReference(
             Registries.ATTRIBUTE,
-            Identifier.of("elemental_spellblades", "converttowind"),
+            Identifier.of(MOD_ID, "converttowind"),
             new ClampedEntityAttribute(
                     "attribute.name.elemental_spellblades.convert_to_wind",
                     100, 100, 9999
