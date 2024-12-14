@@ -44,6 +44,9 @@ public class CreativeTabRegister {
                 entries.add(water_chestplate);
                 entries.add(water_leggings);
                 entries.add(water_boots);
+                entries.add(water_techniques);
+                entries.add(earth_techniques);
+                entries.add(wind_techniques);
             })
             .build();
     public static void register() {

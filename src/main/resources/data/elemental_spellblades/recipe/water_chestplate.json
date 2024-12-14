@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "more_rpg_classes:aqua_stone"
+  },
+  "base": {
+    "item": "minecraft:iron_chestplate"
+  },
+  "addition": {
+    "item": "elemental_spellblades:runewave_ingot"
+  },
+  "result": {
+    "id": "elemental_spellblades:runewave_chestplate"
+  }
+}

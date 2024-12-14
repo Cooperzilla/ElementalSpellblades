@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "more_rpg_classes:terra_stone"
+  },
+  "base": {
+    "item": "minecraft:iron_helmet"
+  },
+  "addition": {
+    "item": "elemental_spellblades:runequake_ingot"
+  },
+  "result": {
+    "id": "elemental_spellblades:runequake_helmet"
+  }
+}

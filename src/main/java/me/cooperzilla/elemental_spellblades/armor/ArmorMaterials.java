@@ -76,16 +76,16 @@ public class ArmorMaterials {
                                 0.03,
                                 EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL
                         ),
-                        AttributeModifierSlot.MAINHAND
+                        AttributeModifierSlot.ARMOR
                 )
                 .add(
-                        RegistryEntry.of(ReabsorptionInit.WARDING),
+                        RegistryEntry.of(ReabsorptionInit.WARDING.value()),
                         new EntityAttributeModifier(
                                 Identifier.of(ReabsorptionInit.MOD_ID,"reabsorption"),
                                 1.5,
                                 EntityAttributeModifier.Operation.ADD_VALUE
                         ),
-                        AttributeModifierSlot.MAINHAND
+                        AttributeModifierSlot.ARMOR
                 )
                 .build();
     }

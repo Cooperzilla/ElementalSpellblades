@@ -7,6 +7,7 @@ import net.minecraft.item.SwordItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.spell_engine.api.item.trinket.SpellBookTrinketItem;
 
 import static me.cooperzilla.elemental_spellblades.ElementalSpellblades.MOD_ID;
 
@@ -28,6 +29,10 @@ public class ItemRegister {
     public static Item runequake_ingot = new Item(new Item.Settings());
     public static Item runestorm_ingot = new Item(new Item.Settings());
 
+    public static Item water_techniques = new SpellBookTrinketItem(Identifier.of("elemental_spellblades:wind_pool"), new Item.Settings().maxCount(1));
+    public static Item earth_techniques = new SpellBookTrinketItem(Identifier.of("elemental_spellblades:wind_pool"), new Item.Settings().maxCount(1));
+    public static Item wind_techniques = new SpellBookTrinketItem(Identifier.of("elemental_spellblades:wind_pool"), new Item.Settings().maxCount(1));
+
     public static void registerItem(String s, Item i) {
         Registry.register(Registries.ITEM, Identifier.of(MOD_ID, s), i);
     }
@@ -48,6 +53,9 @@ public class ItemRegister {
         registerItem("earth_orb", earth_orb);
         registerItem("water_orb", water_orb);
         registerItem("wind_orb", wind_orb);
+        registerItem("water_techniques", water_techniques);
+        registerItem("earth_techniques", earth_techniques);
+        registerItem("wind_techniques", wind_techniques);
         Armor.register();
     }
 }

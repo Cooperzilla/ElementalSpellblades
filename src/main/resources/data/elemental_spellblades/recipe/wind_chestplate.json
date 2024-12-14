@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "more_rpg_classes:storm_stone"
+  },
+  "base": {
+    "item": "minecraft:iron_chestplate"
+  },
+  "addition": {
+    "item": "elemental_spellblades:runestorm_ingot"
+  },
+  "result": {
+    "id": "elemental_spellblades:runestorm_chestplate"
+  }
+}

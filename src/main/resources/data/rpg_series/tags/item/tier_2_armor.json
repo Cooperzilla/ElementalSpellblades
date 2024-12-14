@@ -1,15 +1,6 @@
 {
   "replace": false,
   "values": [
-    "elemental_spellblades:earth_spellblade",
-    "elemental_spellblades:water_spellblade",
-    "elemental_spellblades:wind_spellblade",
-    "elemental_spellblades:earth_spike",
-    "elemental_spellblades:water_cutlass",
-    "elemental_spellblades:wind_greatblade",
-    "elemental_spellblades:earth_claymore",
-    "elemental_spellblades:water_claymore",
-    "elemental_spellblades:wind_claymore",
     "elemental_spllblades:runequake_helmet",
     "elemental_spllblades:runequake_chestplate",
     "elemental_spllblades:runequake_leggings",
